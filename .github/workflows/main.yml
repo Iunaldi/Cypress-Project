@@ -16,5 +16,3 @@ jobs:
           with:
             github_token: ${{ secrets.GITHUB_TOKEN }}
             publish_dir: ./public
-            user_name: 'Iunaldi'
-            user_email: 'ilkerunaldi76@gmail.com'
