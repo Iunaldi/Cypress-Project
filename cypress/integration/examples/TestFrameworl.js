@@ -83,8 +83,7 @@ describe('My Second Test Suit', function()
             cy.get('input[type="submit"]').click();
             //cy.get('.alert').should('have.text','Success! Thank you! Your order will be delivered in next few weeks :-).')
             cy.get('.alert').then((text)=>{
-                //expect(text.text().includes('Success! Thank you! Your order will be delivered in next few weeks :-).'));
-                expect(text.text().includes('auccess'));
+                expect(text.text().includes('Success! Thank you! Your order will be delivered in next few weeks :-).'));
             })
 
     })
