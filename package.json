@@ -3,16 +3,34 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run"
+    "test": "npx cypress run --browser chrome",
+    "headTest": "npx cypress run --headed",
+    "chromeTest": "npx cypress run --browser chrome",
+    "recordDashBoardTest": "npx cypress run --record --key 74a894fc-78cd-4630-9add-21f6844f3c5d",
+    "greenKart": "npx cypress run --spec \"cypress/integration/GreenKart/*\"",
+    "smokeTest": "npx cypress run --spec \"cypress/integration/GreenKart/Test1.js\""
+  },
+  "cypress-cucumber-preprocessor": {
+    "json": {
+      "enabled": true,
+      "output": "cypress/cucumberReports/result.json"
+    }
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "cypress": "^13.13.2",
-    "cypress-mochawesome-reporter": "^3.8.2"
+    "cypress": "latest",
+    "cypress-mochawesome-reporter": "latest",
+    "cypress-sql-server": "^1.0.0",
+    "multiple-cucumber-html-reporter": "^3.7.0",
+    "neat-csv": "^5.1.0"
   },
   "dependencies": {
-    "cypress-iframe": "^1.0.1"
+    "@badeball/cypress-cucumber-preprocessor": "latest",
+    "@cypress/browserify-preprocessor": "latest",
+    "convert-excel-to-json": "^1.7.0",
+    "cypress-iframe": "latest",
+    "exceljs": "^4.4.0"
   }
 }
