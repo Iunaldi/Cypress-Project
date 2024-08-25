@@ -4,10 +4,12 @@
   "main": "index.js",
   "scripts": {
     "test": "npx cypress run --browser chrome",
-    "headTest": "npx cypress run --headed",
+    "headTest": "npx cypress run --headed --browser chrome",
     "chromeTest": "npx cypress run --browser chrome",
+    "fakeTest": "npx cypress run --headed --spec \"cypress/integration/examples/FakeTest.js\"",
+    "failedTest": "npx cypress run --headed --spec  \"cypress/integration/examples/upload-download.js\"   \"cypress/integration/examples/excelTest.js\"",
     "recordDashBoardTest": "npx cypress run --record --key 74a894fc-78cd-4630-9add-21f6844f3c5d",
-    "greenKart": "npx cypress run --spec \"cypress/integration/GreenKart/*\"",
+    "greenKart": "npx cypress run --spec \"cypress/integration/GreenKart/*\"",    
     "smokeTest": "npx cypress run --spec \"cypress/integration/GreenKart/Test1.js\""
   },
   "cypress-cucumber-preprocessor": {

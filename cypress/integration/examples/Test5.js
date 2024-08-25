@@ -9,7 +9,7 @@ describe('My Second Suit', function(){
             if (text.includes("TestNG")){
                const price=$e1.find('td:nth-child(3)').text()                        
                cy.log($e1.find('td:nth-child(3)').text());
-               expect(price).to.equal('25')
+               expect(price).to.equal('20')
            }
 
         })

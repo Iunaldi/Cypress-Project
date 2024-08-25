@@ -16,11 +16,13 @@ describe('My First Test Suit',function(){
                     "book_name": "RestAssured with Java",
                     "isbn": "BSG",
                     "aisle": "2302"                
-            },{               
+            },
+            /*{               
                 "book_name": "RestAssured with Java",
                 "isbn": "BSG",
                 "aisle": "2302"                
-        }]
+        }
+                */]
         }).as('bookretrievals');
         cy.get('button.btn').click();
         cy.wait('@bookretrievals').then(({request,response})=>{
