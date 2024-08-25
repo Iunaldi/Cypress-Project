@@ -10,7 +10,7 @@ jobs:
         - name: Cypress run
           uses: cypress-io/github-action@v6
           with:
-            start: npm run failedTest
+            start: npm run test
           continue-on-error: true
         - name: Deploy report page
           uses: peaceiris/actions-gh-pages@v3
