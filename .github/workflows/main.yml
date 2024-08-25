@@ -15,7 +15,7 @@ jobs:
         - name: Deploy report page
           uses: peaceiris/actions-gh-pages@v3
           with:
-            github_token: ${{ secrets.GH_TOKEN }}
+            github_token: ${{ secrets.TOKEN }}
             publish_dir: ./cypress/reports/html
             user_name: 'Iunaldi'
             user_email: 'ilkerunaldi76@gmail.com'
