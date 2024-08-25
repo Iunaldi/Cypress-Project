@@ -26,7 +26,7 @@ async function setupNodeEvents(on, config) {
   await addCucumberPreprocessorPlugin(on, config);
 
   on("file:preprocessor", preprocessor(config));
-  //require('cypress-mochawesome-reporter/plugin')(on);
+  require('cypress-mochawesome-reporter/plugin')(on);
 
   tasks = sqlServer.loadDBPlugin(config.db);
   on("task", tasks);
@@ -82,7 +82,7 @@ async function readExcel(worksheet, searchText) {
 module.exports = defineConfig({
   projectId: "739wch",
   defaultCommandTimeout: 6000,
-  //reporter: 'cypress-mochawesome-reporter',
+  reporter: 'cypress-mochawesome-reporter',
 
   env: {
     url: "https://rahulshettyacademy.com",

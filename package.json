@@ -12,12 +12,7 @@
     "greenKart": "npx cypress run --spec \"cypress/integration/GreenKart/*\"",    
     "smokeTest": "npx cypress run --spec \"cypress/integration/GreenKart/Test1.js\""
   },
-  "cypress-cucumber-preprocessor": {
-    "json": {
-      "enabled": true,
-      "output": "cypress/cucumberReports/result.json"
-    }
-  },
+  
   "author": "",
   "license": "ISC",
   "description": "",
